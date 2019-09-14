@@ -5,7 +5,6 @@ buildscript {
     ext.kotlinx_version = '1.0.0'
     ext.lifecycle_version = '2.1.0-rc01'
     ext.room_version = '2.1.0'
-    ext.paging_version = '2.1.0'
     ext.retrofit_version = '2.6.1'
     ext.okhttp_version = '4.1.1'
     ext.simple_version='2.6.1'
