@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PetCurrencyConverter</string>
+    <string name="error_action">Повтор</string>
+</resources>
