@@ -97,7 +97,7 @@ class ListRepositoryImpl(
             list.addSource(db.listDao().getListData()) {
                 list.value = it
             }
-            getListDataAsync(state, list)
+            getListDataAsync(state)
             list
         } catch(ex:Exception) {
             state.postValue(State.error(ex))
@@ -106,14 +106,12 @@ class ListRepositoryImpl(
     }
 
     private fun getListDataAsync(
-        state:MutableLiveData<State>,
-        list: MediatorLiveData<CurrencyList>
+        state:MutableLiveData<State>
     ) {
         scope.launch {
             val source = net.getCurrenciesList().await()
             if (source.isSuccessful) {
                 source.body()?.let {
-                    list.postValue(it)
                     db.listDao().clearListData()
                     db.currencyDao().clearCurrencies()
                     db.listDao().insertListData(it)

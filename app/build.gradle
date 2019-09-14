@@ -36,31 +36,31 @@ dependencies {
     implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
     implementation "com.squareup.retrofit2:converter-simplexml:$simple_version"
 
-    implementation "com.github.hadilq.liveevent:liveevent:1.0.1"
+    implementation "com.github.hadilq.liveevent:liveevent:$liveevent_version"
 
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.core:core-ktx:1.1.0'
+    implementation "androidx.appcompat:appcompat:$androidx_version"
+    implementation "androidx.core:core-ktx:$androidx_version"
     implementation "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
     implementation "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
     implementation "androidx.room:room-runtime:$room_version"
-    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+    implementation "androidx.recyclerview:recyclerview:$recycler_version"
 
-    implementation 'com.facebook.litho:litho-core:0.31.0'
-    implementation 'com.facebook.litho:litho-widget:0.31.0'
-    implementation 'com.facebook.soloader:soloader:0.5.1'
+    implementation "com.facebook.litho:litho-core:$litho_version"
+    implementation "com.facebook.litho:litho-widget:$litho_version"
+    implementation "com.facebook.soloader:soloader:$soloader_varsion"
 
-    implementation 'com.facebook.litho:litho-sections-core:0.31.0'
-    implementation 'com.facebook.litho:litho-sections-widget:0.31.0'
-    compileOnly 'com.facebook.litho:litho-sections-annotations:0.31.0'
+    implementation "com.facebook.litho:litho-sections-core:$litho_version"
+    implementation "com.facebook.litho:litho-sections-widget:$litho_version"
+    compileOnly "com.facebook.litho:litho-sections-annotations:$litho_version"
 
-    testImplementation 'com.facebook.litho:litho-testing:0.31.0'
+    testImplementation "com.facebook.litho:litho-testing:$litho_version"
 
-    debugImplementation 'com.squareup.leakcanary:leakcanary-android:2.0-beta-1'
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$leakcanary_version"
 
     kapt "androidx.room:room-compiler:$room_version"
-    kapt 'com.facebook.litho:litho-processor:0.31.0'
-    kapt 'com.facebook.litho:litho-sections-processor:0.31.0'
+    kapt "com.facebook.litho:litho-processor:$litho_version"
+    kapt "com.facebook.litho:litho-sections-processor:$litho_version"
 
     testImplementation "junit:junit:$junit_version"
     testImplementation "org.robolectric:robolectric:$robolectric_version"
