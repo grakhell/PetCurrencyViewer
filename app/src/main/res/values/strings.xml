@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">PetCurrencyConverter</string>
-    <string name="error_action">Повтор</string>
+    <string name="app_name">Currency Viewer</string>
+    <string name="error_action">Retry</string>
 </resources>

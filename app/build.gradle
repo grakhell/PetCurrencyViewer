@@ -7,7 +7,7 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 29
     defaultConfig {
-        applicationId "ru.grakhell.petcurrencyconverter"
+        applicationId "ru.grakhell.petcurrencyviewer"
         minSdkVersion 20
         targetSdkVersion 29
         versionCode 1
